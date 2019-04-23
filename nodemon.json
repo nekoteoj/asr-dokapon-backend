@@ -1,0 +1,7 @@
+{
+    "watch": ["src"],
+    "ext": "js",
+    "ignore": ["*.test.js"],
+    "delay": "3",
+    "exec": "npm run serve"
+}

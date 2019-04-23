@@ -1,0 +1,28 @@
+{
+  "name": "asr-dokapon-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node lib/server.js",
+    "serve": "babel-node src/server.js",
+    "watch": "nodemon"
+  },
+  "main": "server.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "restify": "^8.2.0",
+    "restify-pino-logger": "^3.0.0",
+    "restify-router": "^0.5.1"
+  }
+}
