@@ -1,7 +1,7 @@
 class IndexController {
   get(req, res, next) {
     res.json({
-      message: 'Hello World',
+      message: 'The server work properly',
     });
     return next();
   }

@@ -2,6 +2,8 @@
   "extends": "airbnb-base",
   "rules": {
     "no-console": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "linebreak-style": "off",
+    "no-unused-vars": "off"
   }
 }
