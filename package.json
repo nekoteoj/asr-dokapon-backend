@@ -23,6 +23,7 @@
     "dotenv": "^7.0.0",
     "restify": "^8.2.0",
     "restify-pino-logger": "^3.0.0",
-    "restify-router": "^0.5.1"
+    "restify-router": "^0.5.1",
+    "robotjs": "^0.5.1"
   }
 }
