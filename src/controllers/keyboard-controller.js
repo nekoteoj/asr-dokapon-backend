@@ -5,87 +5,61 @@ import {
 class KeyboardController {
   post(req, res, next) {
     const { command } = req.body;
-    if (command === '1') {
-	right();
-}
-else if (command === '2') {
-	up();
-}
-else if (command === '3') {
-	left();
-}
-else if (command === '4') {
-	down();
-}
-else if (command === '5') {
-	type('v');
-}
-else if (command === '6') {
-	type('c');
-}
-else if (command === '7') {
-	type('x');
-}
-else if (command === '8') {
-	type('z');
-}
-else if (command === '9') {
-	type('z');
-	type('z');
-}
-else if (command === '10') {
-	type('z');
-	type('z');
-}
-else if (command === '11') {
-	type('z');
-	type('z');
-}
-else if (command === '16') {
-	type('z');
-}
-else if (command === '17') {
-	type('c');
-}
-else if (command === '18') {
-	type('v');
-}
-else if (command === '19') {
-	type('x');
-}
-else if (command === '20') {
-	type('z');
-}
-else if (command === '21') {
-	type('z');
-}
-else if (command === '22') {
-	type('z');
-}
-else if (command === '23') {
-	type('x');
-}
-else if (command === '24') {
-	type('x');
-}
-else if (command === '25') {
-	type('x');
-}
-else if (command === '26') {
-	type('z');
-}
-else if (command === '30') {
-	right();
-}
-else if (command === '31') {
-	left();
-}
-else if (command === '32') {
-	up();
-}
-else if (command === '33') {
-	down();
-}
+	if (command === '1') {
+		type('l');
+	}
+	else if (command === '2') {
+		type('i');
+	}
+	else if (command === '3') {
+		type('j');
+	}
+	else if (command === '4') {
+		type('v');
+	}
+	else if (command === '5') {
+		type('c');
+	}
+	else if (command === '6') {
+		type('x');
+	}
+	else if (command === '7') {
+		type('z');
+	}
+	else if (command === '8') {
+		type('k');
+	}
+	else if (command === '9') {
+		type('z');
+	}
+	else if (command === '10') {
+		type('z');
+	}
+	else if (command === '11') {
+		type('c');
+	}
+	else if (command === '12') {
+		type('v');
+	}
+	else if (command === '13') {
+		type('x');
+	}
+	else if (command === '14') {
+		type('x');
+	}
+	else if (command === '15') {
+		type('x');
+	}
+	else if (command === '16') {
+		type('x');
+	}
+	else if (command === '17') {
+		type('x');
+	}
+	else if (command === '18') {
+		type('z');
+	}
+	
     res.json({});
     return next();
   }
