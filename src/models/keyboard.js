@@ -16,7 +16,7 @@ const wait = async (t) => {
   });
 };
 
-export const enter = () => {
+export const enter = async () => {
   await longPress('enter', 500);
   await wait(2000);
 };
