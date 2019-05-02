@@ -1,31 +1,47 @@
 import robot from 'robotjs';
 
+const longPress = async (w, t) => {
+  return new Promise((resolve, reject) => {
+    robot.keyToggle(w, 'down');
+    setTimeout(() => {
+      robot.keyToggle(w, 'up');
+      resolve();
+    }, t);
+  });
+};
+
+const wait = async (t) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve(), t);
+  });
+};
+
 export const enter = () => {
-  robot.keyToggle('enter', 'down');
-  setTimeout(() => robot.keyToggle('enter', 'up'), 500);
+  await longPress('enter', 500);
+  await wait(2000);
 };
 
-export const type = (word) => {
-  robot.keyToggle(word, 'down');
-  setTimeout(() => robot.keyToggle(word, 'up'), 500);
+export const type = async (word) => {
+  await longPress(word, 500);
+  await wait(2000);
 };
 
-export const up = () => {
-  robot.keyToggle('up', 'down');
-  setTimeout(() => robot.keyToggle('up', 'up'), 500);
+export const up = async () => {
+  await longPress('up', 500);
+  await wait(2000);
 };
 
-export const down = () => {
-  robot.keyToggle('down', 'down');
-  setTimeout(() => robot.keyToggle('down', 'up'), 500);
+export const down = async () => {
+  await longPress('down', 500);
+  await wait(2000);
 };
 
-export const right = () => {
-  robot.keyToggle('right', 'down');
-  setTimeout(() => robot.keyToggle('right', 'up'), 500);
+export const right = async () => {
+  await longPress('right', 500);
+  await wait(2000);
 };
 
-export const left = () => {
-  robot.keyToggle('left', 'down');
-  setTimeout(() => robot.keyToggle('left', 'up'), 500);
+export const left = async () => {
+  await longPress('left', 500);
+  await wait(2000);
 };
